@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-// const cors = require('cors');
+// const cors = require('cors'); 기본세팅에서 지워짐
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3001;
 
-// app.use(cors());
+// app.use(cors()); 기본세팅에서 지워짐
 app.use(bodyParser.json());
 
 app.get('/api', (req, res) => {
