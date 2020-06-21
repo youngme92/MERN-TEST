@@ -15,9 +15,15 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/react-express",
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json());
 
-app.get('/api', (req, res) => {
-    res.json({username: 'youngme'})
+// app.get('/api', (req, res) => {
+//     res.json({username: 'youngme'})
+// })
+app.get('/', (req, res) => {
+    res.status(200).json({
+        message:"sopt 서버 여러분 안녕하세요~,sopt-Media에 좋아요와 댓글 부탁드립니다!!(꾸벅)",
+    })
 })
+
 
 app.listen(PORT, process.env.IP, function(){
     console.log("connceted!!")

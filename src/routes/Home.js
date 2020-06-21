@@ -4,7 +4,7 @@ import React, {useState, useEffect} from "react";
 const useUsername = () => {
     const [username, setUsername] = useState("");
    useEffect(() => {
-     fetch('http://localhost:3001/api').then(res => res.json()).then(data=> setUsername(data.username))
+    //  fetch('http://localhost:3001/api').then(res => res.json()).then(data=> setUsername(data.username))
    }, [])
    return {username}
   }
