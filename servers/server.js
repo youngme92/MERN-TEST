@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/react-express",
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json());
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.json({username: 'youngme'})
 })
 
