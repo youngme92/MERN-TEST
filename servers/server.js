@@ -19,6 +19,6 @@ app.get('/api', (req, res) => {
     res.json({username: 'youngme'})
 })
 
-app.listen(port, () => {
-    console.log(`express is running on ${port}`)
+app.listen(PORT, process.env.IP, function(){
+    console.log("connceted!!")
 })
