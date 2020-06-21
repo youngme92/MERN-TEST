@@ -1,18 +1,14 @@
 import React from 'react';
-import {HashRouter as Router, Route} from "react-router-dom";
-import Home from "../routes/Home";
+import Header from '../routes/Header';
+import Footer from '../routes/Footer';
 
 
 
-function App() {
-
-  return (
-    
-      <Router>
-        <Route path="/" exact component={Home}></Route>
-      </Router>
-
-  );
-}
+const App = () => (
+  <>
+  <Header />
+  <Footer />
+  </>
+); 
 
 export default App;
